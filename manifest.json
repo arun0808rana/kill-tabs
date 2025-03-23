@@ -1,12 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Close Tabs and Send URLs",
+  "name": "Close Tabs and Store URLs",
   "version": "1.0",
-  "permissions": ["tabs", "activeTab"],
+  "permissions": ["tabs", "storage", "contextMenus"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
     "default_title": "Close Tabs"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
   }
 }
