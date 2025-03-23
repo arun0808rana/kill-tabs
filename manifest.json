@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Close Tabs and Send URLs",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Close Tabs"
+  }
+}
