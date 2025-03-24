@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Closed Tabs List</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    a {
-      text-decoration: none;
-      color: #1a0dab;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closed Tabs List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .timestamp-container {
+            padding: 10px 0;
+            margin-bottom: 15px;
+        }
+
+        .timestamp-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .timestamp-header h2 {
+            margin: 0;
+            margin-right: 8px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: red;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1a0dab;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Closed Tabs List</h1>
-  <div id="container"></div>
-  <script src="list.js"></script>
+    <h1>Closed Tabs List</h1>
+    <div id="container"></div>
+    <script src="list.js"></script>
 </body>
+
 </html>
