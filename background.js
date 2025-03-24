@@ -26,7 +26,7 @@ function handleTabClosure() {
     });
 
     // Close all valid tabs in the current window
-    // chrome.tabs.remove(tabIds);
+    chrome.tabs.remove(tabIds);
 
     // Commented out: Send the URLs to the local server
     /*
