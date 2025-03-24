@@ -11,5 +11,11 @@
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "icons": {
+    "16": "icons/clover.png",
+    "32": "icons/clover.png",
+    "48": "icons/clover.png",
+    "128": "icons/clover.png"
   }
 }
