@@ -1,32 +1,3 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//   chrome.storage.local.get(["closedTabData"], (result) => {
-//     console.log("--result", result);
-//     const dataList = result.closedTabData || [];
-//     console.log("--dataList", dataList);
-//     const container = document.getElementById("container");
-
-//     dataList.forEach((data) => {
-//       const timestamp = document.createElement("h2");
-//       timestamp.textContent = `Closed on: ${data.timestamp}`;
-//       container.appendChild(timestamp);
-
-//       const urlList = document.createElement("ul");
-
-//       data.tabs.forEach((tabObject) => {
-//         const listItem = document.createElement("li");
-//         const link = document.createElement("a");
-//         link.href = tabObject.url;
-//         link.textContent = tabObject?.title || url;
-//         link.target = "_blank";
-//         listItem.appendChild(link);
-//         urlList.appendChild(listItem);
-//       });
-//       container.appendChild(urlList);
-//     });
-//   });
-// });
-
-
 document.addEventListener("DOMContentLoaded", () => {
     chrome.storage.local.get(["closedTabData"], (result) => {
       console.log("--result", result);
@@ -39,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       dataList.forEach((data) => {
         const timestamp = document.createElement("h2");
-        timestamp.textContent = `Closed on: ${data.timestamp}`;
+        timestamp.textContent = `${data.tabs.length} ${data.tabs.length > 1 ? 'Tabs' : 'Tab'} closed on: ${data.timestamp}`;
         fragment.appendChild(timestamp);
   
         const urlList = document.createElement("ul");
