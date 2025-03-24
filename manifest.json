@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Close Tabs and Store URLs",
+  "name": "Kill-Tabs",
   "version": "1.0",
   "permissions": ["tabs", "storage", "contextMenus"],
   "background": {
